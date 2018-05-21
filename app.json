@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/homepage/homepage",
+    "pages/repertory/repertory",
+    "pages/message/message",
+    "pages/personal/personal",
+    "pages/login/login"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "茶企通Lite",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#222222",
+    "selectedColor": "#db4b29",
+    "list": [{
+      "pagePath": "pages/homepage/homepage",
+      "text": "首页",
+      "iconPath": "images/tab_homepage_normal.png",
+      "selectedIconPath": "images/tab_homepage_checked.png"
+    },
+    {
+      "pagePath": "pages/repertory/repertory",
+      "text": "茶仓",
+      "iconPath": "images/tab_repertory_normal.png",
+      "selectedIconPath": "images/tab_repertory_checked.png"
+    },
+    {
+      "pagePath": "pages/message/message",
+      "text": "消息",
+      "iconPath": "images/tab_message_normal.png",
+      "selectedIconPath": "images/tab_message_checked.png"
+    },
+    {
+      "pagePath": "pages/personal/personal",
+      "text": "我的",
+      "iconPath": "images/tab_personal_normal.png",
+      "selectedIconPath": "images/tab_personal_checked.png"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

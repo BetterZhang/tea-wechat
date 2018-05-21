@@ -1,0 +1,76 @@
+<view>
+  <view class='container'>
+    <view class='swiper-container'>
+      <swiper class='swiper-box' indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval='{{interval}}' 
+          duration='{{duration}}' indicator-color='{{indicatoColor}}' indicator-active-color='{{indicatorActiveColor}}'>
+          <block wx:for='{{banners}}' wx:key='id'>
+            <swiper-item>
+              <image src='{{item.imageUrl}}' class='slide-image'></image>
+            </swiper-item>
+          </block>
+      </swiper>
+    </view>
+
+    <view class='categoryList-container'>
+      <block wx:for='{{categories}}' wx:key=''>
+        <view class='category-info'>
+          <image src='{{item.src}}' class='category-image'></image>
+          <view class='category-text'>{{item.name}}</view>
+        </view>
+      </block>
+    </view>
+
+    <view class='line-horizontal'></view>
+
+    <view class='notice-container'>
+      <block>
+        <view class='notice-info'>
+          <view class='notice-tip'>公告</view>
+          <view class='line-vertical'></view>
+          <swiper class='swiper-notice' vertical='true' autoplay='true' circular='true' interval='2000'>
+            <block wx:for='{{notices}}' wx:key=''>
+              <navigator url='' open-type='navigate'>
+                <swiper-item>
+                  <view class='notice-title'>{{item.title}}</view>
+                </swiper-item>
+              </navigator>
+            </block>
+          </swiper>
+          <image src='../../images/homepage/notice_new.png' class='notice-img'></image>
+        </view>
+      </block>
+    </view>
+
+    <view class='swiper-newtea-container'>
+      <swiper class='swiper-newtea' autoplay='{{autoplay}}' interval='{{interval}}' duration='{{duration}}'>
+          <block wx:for='{{newteaList}}' wx:key='id'>
+            <swiper-item>
+              <block>
+                <image src='{{"https://www.teaexs.com/pictures/product/" + item.appProListImageUrl}}' class='slide-image'></image>
+              </block>
+            </swiper-item>
+          </block>
+      </swiper>
+    </view>
+
+    <view class='header-news'>热门资讯</view>
+    <view class='line-horizontal'></view>
+    <view class='newsList'>
+      <block wx:for='{{newsList}}' wx:key=''>
+        <navigator url=''>
+          <view class='news-list'>
+            <view class='news-info-image'>
+              <image class='news-image' src='{{item.imageLink}}'></image>
+            </view>
+            <view class='news-info'>
+              <view class='news-info-title'>{{item.title}}</view>
+              <view class='news-info-time'>{{item.publishTimeSrc}}</view>
+            </view>
+          </view>
+          <view class='line-horizontal'></view>
+        </navigator>
+      </block>
+    </view>
+
+  </view>
+</view>

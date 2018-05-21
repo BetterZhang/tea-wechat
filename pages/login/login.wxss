@@ -1,0 +1,23 @@
+.container {
+  background-color: white;
+  min-height: 100%;
+}
+
+.login-info-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  vertical-align: middle;
+}
+
+.phonenum-container {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.password-container {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}

@@ -1,0 +1,11 @@
+
+<view class='container'>
+  <view class='login-info-container'>
+    <view class='phonenum-container'>
+      <input type='number' placeholder='{{inputPhoneNum}}' bindinput='bindPhoneNumInput' maxlength='11'></input>
+    </view>
+    <view class='password-container'>
+      <input type='text' placeholder='{{inputPassword}}' bindinput='bindPasswordInput' password='true'></input>
+    </view>
+  </view>
+</view>

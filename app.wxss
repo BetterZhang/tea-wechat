@@ -1,0 +1,26 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+
+.wxParse-img {
+  display: block !important;
+}
+
+.line-horizontal {
+  width: 100%;
+  height: 1px;
+  background: #d4d4d4;
+}
+
+.line-vertical {
+  width: 1px;
+  height: 80%;
+  background: #d4d4d4;
+  display: inline-block;
+}
